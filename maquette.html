@@ -285,16 +285,537 @@
             </table>
         </div>
         <div id="tab2" class="tab-content">
-            <h2>Contenu de l'Onglet 2</h2>
-            <p>Ceci est le contenu pour l'onglet 2.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Questionnements</th>
+
+                        <th>Score</th>
+                        <th>2 points</th>
+                        <th>1 point</th>
+                        <th>0 point</th>
+
+                        <th>Démarche pour progresser</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Vélocité de réponse</td>
+                        <td>Valeur supérieure utilisable livrée plus tôt (Fonction principale utilisable dès les
+                            premières versions)
+                        </td>
+
+                        <td>
+                            <input type="radio" name="score10" value="0"> 0
+                            <input type="radio" name="score10" value="1"> 1
+                            <input type="radio" name="score10" value="2"> 2
+                        </td>
+                        <td>Principe du MVP respecté : Minimum Viable Product / la version d'un produit qui permet
+                            d'obtenir un
+                            maximum de retours client avec un minimum d'effort</td>
+                        <td>Prototype fonctionnel intermédiaire livré au client</td>
+                        <td>Pas de phase de validation intermédiaire</td>
+                        <td rowspan="3">
+                            Améliorer la vélocité des équipes en :<br>
+                            - proposant aux clients internes comme externes, des MVP<br>
+                            - traitant les aléas au fil de l'eau (via un PDCA par exemple)<br>
+                            - mesurant cette vélocité (par la mise en place de burn down chart par exemple)<br>
+                            - en formant les équipes aux outils de gestion du temps et des priorités dans un monde VUCA
+                            (pomodoro,
+                            kanban board...)<br>
+                            VUCA :
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Réactivité face aux impératifs prépondérants</td>
+
+                        <td>
+                            <input type="radio" name="score11" value="0"> 0
+                            <input type="radio" name="score11" value="1"> 1
+                            <input type="radio" name="score11" value="2"> 2
+                        </td>
+                        <td>L'équipe de conception s'adapte en cas de modification en cours de conception</td>
+                        <td>Modifications en cours de conception engendrant alors du retard</td>
+                        <td>Pas de modification possible en cours de conception</td>
+                    </tr>
+                    <tr>
+                        <td>Mesure de la vélocité de l'équipe (indicateur de suivi du travail d'une équipe de
+                            conception)</td>
+
+                        <td>
+                            <input type="radio" name="score17" value="0"> 0
+                            <input type="radio" name="score17" value="1"> 1
+                            <input type="radio" name="score17" value="2"> 2
+                        </td>
+                        <td>Mesure de la vélocité</td>
+                        <td>Suivi des tâches</td>
+                        <td>Jamais</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Environnements souples</td>
+                        <td>Les installations techniques et de gestion sont modernes (TIC/ERP/CRM)</td>
+
+                        <td>
+                            <input type="radio" name="score20" value="0"> 0
+                            <input type="radio" name="score20" value="1"> 1
+                            <input type="radio" name="score20" value="2"> 2
+                        </td>
+                        <td>En cas de besoin, le système d'information favorise la réactivité</td>
+                        <td>Le système d'information permet avec quelques difficultés d'avoir de la réactivité</td>
+                        <td>Le système d'information freine toute tentative de réagir rapidement</td>
+                        <td rowspan="4">
+                            Au sein de l'entreprise, nommer un Business Analyst qui sera alors le véritable chaînon
+                            manquant entre
+                            la DSI et les métiers.<br>
+                            <br>
+                            Investir dans le Business Object et le no-code<br>
+                            <br>
+                            Former les équipes au Lean et/ou aux méthodes agiles<br>
+                            <br>
+                            Dès que possible instaurer les concepts du juste à temps
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Les équipes sont en capacité d'autonomiser une partie de leurs tâches</td>
+
+                        <td>
+                            <input type="radio" name="score12" value="0"> 0
+                            <input type="radio" name="score12" value="1"> 1
+                            <input type="radio" name="score12" value="2"> 2
+                        </td>
+                        <td>L'entreprise équipe et forme ses équipes à la création de site web ou app via des outils
+                            no-code</td>
+                        <td>On laisse la possibilité de créer quelques macros Excel/VBA</td>
+                        <td>Jamais</td>
+                    </tr>
+                    <tr>
+                        <td>Les équipes s’inscrivent dans un cadre Agile Lean</td>
+
+                        <td>
+                            <input type="radio" name="score18" value="0"> 0
+                            <input type="radio" name="score18" value="1"> 1
+                            <input type="radio" name="score18" value="2"> 2
+                        </td>
+                        <td>Les concepts Agile/Lean sont inscrits dans l'ADN de l'entreprise : Satisfaction du client
+                            avec des
+                            livraisons au plu tôt et régulières, accepter les changements, lisser les activités,
+                            collaboration
+                            quotidienne avec les parties prenantes, proximité terrain, autonomie des équipes dans la
+                            résolution de
+                            problèmes, amélioration continue...</td>
+                        <td>Plusieurs concepts Agile/Lean sont mis en œuvre dans l'entreprise</td>
+                        <td>Pas de démarche Agile/Lean initiée dans l'entreprise</td>
+                    </tr>
+                    <tr>
+                        <td>Les mécanismes de livraison et de synchronisation sont matures</td>
+
+                        <td>
+                            <input type="radio" name="score13" value="0"> 0
+                            <input type="radio" name="score13" value="1"> 1
+                            <input type="radio" name="score13" value="2"> 2
+                        </td>
+                        <td>Concepts du juste à temps maîtrisés (production rythmée par la demande client, peu
+                            d'en-cours)</td>
+                        <td>Quelques concepts du juste à temps sont mis en œuvre pour tendre le flux</td>
+                        <td>Pas de démarche de tension des flux</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Défi environnemental</td>
+                        <td>Les innovations produit tiennent compte de l'urgence climatique</td>
+
+                        <td>
+                            <input type="radio" name="score14" value="0"> 0
+                            <input type="radio" name="score14" value="1"> 1
+                            <input type="radio" name="score14" value="2"> 2
+                        </td>
+                        <td>Systématiquement</td>
+                        <td>Des premières initiatives ont été lancées</td>
+                        <td>Aucune réflexion sur cet axe</td>
+                        <td rowspan="3">
+                            Faire de l'urgence climatique une priorité sur l'ensemble des activités de l'entreprise par
+                            la mise en
+                            place de démarches :<br>
+                            - d'éco-conception des produits<br>
+                            - d'éco-industrialisation et d'éco-production sur l'ensemble des process<br>
+                            - de développement durable (axes environnemental, social et sociétal)<br>
+                            - performance énergétique des bâtiments et infrastructures des systèmes d'informations<br>
+                            - green supply chain management
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Les processus internes sont remis en cause pour diminuer leur impact environnemental</td>
+
+                        <td>
+                            <input type="radio" name="score15" value="0"> 0
+                            <input type="radio" name="score15" value="1"> 1
+                            <input type="radio" name="score15" value="2"> 2
+                        </td>
+                        <td>Systématiquement</td>
+                        <td>Des premières initiatives ont été lancées</td>
+                        <td>Aucune réflexion sur cet axe</td>
+                    </tr>
+                    <tr>
+                        <td>Les parties prenantes sont sélectionnées en fonction de leur éthique vis-à-vis du
+                            développement durable
+                        </td>
+
+                        <td>
+                            <input type="radio" name="score19" value="0"> 0
+                            <input type="radio" name="score19" value="1"> 1
+                            <input type="radio" name="score19" value="2"> 2
+                        </td>
+                        <td>Systématiquement</td>
+                        <td>Des premières initiatives ont été lancées</td>
+                        <td>Aucune réflexion sur cet axe</td>
+                    </tr>
+                    <tr>
+                        <td>Veille et benchmark</td>
+                        <td>Veille stratégique</td>
+
+                        <td>
+                            <input type="radio" name="score16" value="0"> 0
+                            <input type="radio" name="score16" value="1"> 1
+                            <input type="radio" name="score16" value="2"> 2
+                        </td>
+                        <td>La veille stratégique de l'entreprise permet d'anticiper les disruptions nécessaires</td>
+                        <td>La veille stratégique de l'entreprise permet d'anticiper les évolutions et les innovations
+                        </td>
+                        <td>Pas de veille</td>
+                        <td>
+                            Former les équipes à l'intelligence économique, la veille et le benchmarking.<br>
+                            Devenir proactif : Apprendre à prendre du recul dans l'instantanéité pour avoir un coup
+                            d'avance
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div id="tab3" class="tab-content">
-            <h2>Contenu de l'Onglet 3</h2>
-            <p>Ceci est le contenu pour l'onglet 3.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Questionnements</th>
+
+                        <th>Score</th>
+                        <th>2 points</th>
+                        <th>1 point</th>
+                        <th>0 point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="7">Business model</td>
+                        <td>Votre entreprise dégage t-elle une part de CA par des produits ou services en ligne</td>
+
+                        <td>
+                            <input type="radio" name="score21" value="0"> 0
+                            <input type="radio" name="score21" value="1"> 1
+                            <input type="radio" name="score21" value="2"> 2
+                        </td>
+                        <td>Oui environ 30%</td>
+                        <td>Oui environ 20%</td>
+                        <td>Moins de 10%</td>
+                    </tr>
+                    <tr>
+                        <td>La mise en place d’outils numériques a-t-elle permis d'optimiser les coûts, les délais et la
+                            qualité ?
+                        </td>
+
+                        <td>
+                            <input type="radio" name="score22" value="0"> 0
+                            <input type="radio" name="score22" value="1"> 1
+                            <input type="radio" name="score22" value="2"> 2
+                        </td>
+                        <td>Oui pour tous les critères</td>
+                        <td>Oui mais pas pour tous les critères</td>
+                        <td>Aucun</td>
+                    </tr>
+                    <tr>
+                        <td>Comment les outils sont-ils intégrés dans les process de l’entreprise ?</td>
+
+                        <td>
+                            <input type="radio" name="score23" value="0"> 0
+                            <input type="radio" name="score23" value="1"> 1
+                            <input type="radio" name="score23" value="2"> 2
+                        </td>
+                        <td>A part entière, il existe des procédures et formations aux outils, ces outils sont intuitifs
+                            et adaptés
+                            à l'activité</td>
+                        <td>En partie, les outils ne sont pas toujours adaptés à l'activité et pas toujours rattachés à
+                            des
+                            procédures, sans entraver ses principales fonctions</td>
+                        <td>Absence d'outils ou de procédures, manque d'utilité</td>
+                    </tr>
+                    <tr>
+                        <td>Comment partagez-vous les données numériques avec les parties prenantes (clients,
+                            fournisseurs,…) ?</td>
+
+                        <td>
+                            <input type="radio" name="score24" value="0"> 0
+                            <input type="radio" name="score24" value="1"> 1
+                            <input type="radio" name="score24" value="2"> 2
+                        </td>
+                        <td>En mode avancé : des plateformes dédiées (type extranet, applications) sont intégrées au
+                            mode de partage
+                            permanent</td>
+                        <td>En mode collaboratif : quelques aménagements (type sharepoint, drive) pour des sujets plutôt
+                            ponctuels
+                        </td>
+                        <td>En mode novice : au mieux par mail ou via le site internet</td>
+                    </tr>
+                    <tr>
+                        <td>Mesurez-vous les impacts du numérique sur votre entreprise ?</td>
+
+                        <td>
+                            <input type="radio" name="score25" value="0"> 0
+                            <input type="radio" name="score25" value="1"> 1
+                            <input type="radio" name="score25" value="2"> 2
+                        </td>
+                        <td>Oui des outils de mesure sont en place</td>
+                        <td>Oui et non on observe sans mesurer</td>
+                        <td>Non</td>
+                    </tr>
+                    <tr>
+                        <td>Quel est l’impact du numérique sur la démarche RSE de l’entreprise ?</td>
+
+                        <td>
+                            <input type="radio" name="score26" value="0"> 0
+                            <input type="radio" name="score26" value="1"> 1
+                            <input type="radio" name="score26" value="2"> 2
+                        </td>
+                        <td>Le numérique est un sujet totalement rattaché à la démarche RSE</td>
+                        <td>C'est un sujet observé de loin, on traite les questions d'obligation légales sans aller plus
+                            loin</td>
+                        <td>Absence de démarche RSE</td>
+                    </tr>
+                    <tr>
+                        <td>Existe-t-il des freins (stratégiques, financiers,…) à l’investissement dans les outils
+                            numériques ?</td>
+
+                        <td>
+                            <input type="radio" name="score27" value="0"> 0
+                            <input type="radio" name="score27" value="1"> 1
+                            <input type="radio" name="score27" value="2"> 2
+                        </td>
+                        <td>Non des budgets sont alloués et l'entreprise a bien compris cette nécessité dans sa
+                            stratégie</td>
+                        <td>Oui l'entreprise est plutôt frileuse, on ne dépense que le strict nécessaire pour que les
+                            outils
+                            fonctionnent sans recherche de performance</td>
+                        <td>Oui la stratégie de l'entreprise n'est pas orientée en faveur du numérique, elle n'investit
+                            pas</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">Relation client</td>
+                        <td>L’entreprise dispose-t-elle : d’un site internet, d’un compte LinkedIn, d’une page Facebook,
+                            d’un compte
+                            Twitter,... ?</td>
+
+                        <td>
+                            <input type="radio" name="score28" value="0"> 0
+                            <input type="radio" name="score28" value="1"> 1
+                            <input type="radio" name="score28" value="2"> 2
+                        </td>
+                        <td>Oui la présence de l'entreprise sur les réseaux est visible, elle correspond au secteur
+                            d'activité</td>
+                        <td>Oui mais seulement sur le site internet</td>
+                        <td>Non le site/la page réseau sont inexistants ou inactifs</td>
+                    </tr>
+                    <tr>
+                        <td>Comment utilisez-vous le numérique dans la relation client ? (nouveau modèle de vente,
+                            nouveau modèle
+                            d’échanges avec les clients, communauté, story, chat,...)</td>
+
+                        <td>
+                            <input type="radio" name="score29" value="0"> 0
+                            <input type="radio" name="score29" value="1"> 1
+                            <input type="radio" name="score29" value="2"> 2
+                        </td>
+                        <td>Plusieurs modes d'utilisation sont possibles pour échanger avec l'externe, ils sont
+                            performants et
+                            adaptés avec l'activité de l'entreprise</td>
+                        <td>Des accès dédiés pour les échanges entre le client et l'entreprise sont existent, le suivi
+                            des contacts
+                            n'est pas optimal</td>
+                        <td>Absence de plateforme de contact</td>
+                    </tr>
+                    <tr>
+                        <td>L’entreprise dispose-t-elle d’un community manager ?</td>
+
+                        <td>
+                            <input type="radio" name="score30" value="0"> 0
+                            <input type="radio" name="score30" value="1"> 1
+                            <input type="radio" name="score30" value="2"> 2
+                        </td>
+                        <td>Oui</td>
+                        <td>Non mais une personne se charge de l'animation des réseaux sociaux parmi ses autres tâches
+                        </td>
+                        <td>Non aucune personne n'est dédiée</td>
+                    </tr>
+                    <tr>
+                        <td>Certains de vos collaborateurs sont-ils actifs sur les réseaux sociaux au nom de
+                            l’entreprise ?</td>
+
+                        <td>
+                            <input type="radio" name="score31" value="0"> 0
+                            <input type="radio" name="score31" value="1"> 1
+                            <input type="radio" name="score31" value="2"> 2
+                        </td>
+                        <td>Oui avec des incitations de l'entreprise pour le faire</td>
+                        <td>Oui sans incitation</td>
+                        <td>Non ou rarement</td>
+                    </tr>
+                    <tr>
+                        <td>Comment mesurez-vous et exploitez-vous les données issues du site de votre entreprise ?</td>
+
+                        <td>
+                            <input type="radio" name="score32" value="0"> 0
+                            <input type="radio" name="score32" value="1"> 1
+                            <input type="radio" name="score32" value="2"> 2
+                        </td>
+                        <td>Des indicateurs sont mis en place afin de mesurer l'efficacité et l'impact du site sur les
+                            réseaux, une
+                            recherche de performance est en place pour toucher toujours plus et mieux</td>
+                        <td>Des indicateurs sont en place mais plutôt de façon passive, ils servent à mesurer</td>
+                        <td>Absence de suivi</td>
+                    </tr>
+                    <tr>
+                        <td>Avez-vous observé chez vos concurrents des pratiques innovantes ?</td>
+
+                        <td>
+                            <input type="radio" name="score33" value="0"> 0
+                            <input type="radio" name="score33" value="1"> 1
+                            <input type="radio" name="score33" value="2"> 2
+                        </td>
+                        <td>Oui elles servent comme base de réflexion et de développement pour notre propre entreprise.
+                            On peut
+                            rivaliser !</td>
+                        <td>Oui ils ont quelques belles idées, si seulement on pouvait faire aussi bien qu'eux</td>
+                        <td>Oui ils sont tellement performants et en avance que nous pourrions perdre des marchés</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7">Management</td>
+                        <td>Vos collaborateurs sont-ils équipés de nouveaux équipements numériques de travail (PC
+                            portable,
+                            tablette, smartphone,…) ?</td>
+
+                        <td>
+                            <input type="radio" name="score34" value="0"> 0
+                            <input type="radio" name="score34" value="1"> 1
+                            <input type="radio" name="score34" value="2"> 2
+                        </td>
+                        <td>Les processus de travail s'appuient sur des outils numériques quand ceux-ci sont possibles.
+                            L'ensemble
+                            des fonctions de l'entreprise sont équipées pour pouvoir réaliser le travail à distance
+                            quand celui-ci
+                            est possible</td>
+                        <td>Les processus s'appuient rarement sur la numérisation des données et les outils numériques.
+                            Le potentiel
+                            ne semble pas pleinement exploité.</td>
+                        <td>Les fonctions supports ne sont pas amenées à être équipées pour le travail à distance.
+                            L'entreprise
+                            fonctionne majoritairement sur le mode papier.</td>
+                    </tr>
+                    <tr>
+                        <td>L’arrivée des outils digitaux a-t-elle eu un impact sur les pratiques et la culture de
+                            l’entreprise ?
+                        </td>
+
+                        <td>
+                            <input type="radio" name="score35" value="0"> 0
+                            <input type="radio" name="score35" value="1"> 1
+                            <input type="radio" name="score35" value="2"> 2
+                        </td>
+                        <td>Oui gain de temps, facilité, économies et fiabilité</td>
+                        <td>Oui dans l'ensemble toutefois nous rencontrons parfois des contraintes (pratiques,
+                            techniques,…)</td>
+                        <td>Non au contraire, peu de monde y adhère</td>
+                    </tr>
+                    <tr>
+                        <td>Comment vous êtes-vous approprié et comment avez-vous accompagné ces évolutions?</td>
+
+                        <td>
+                            <input type="radio" name="score36" value="0"> 0
+                            <input type="radio" name="score36" value="1"> 1
+                            <input type="radio" name="score36" value="2"> 2
+                        </td>
+                        <td>Tout est en place pour faciliter la compréhension et l'adhésion aux nouveaux
+                            outils/pratiques</td>
+                        <td>La communication n'est pas parfaite, les personnes qui peuvent se sentir en difficultés avec
+                            les nouvelles
+                            pratiques ne sont pas forcément considérées.</td>
+                        <td>Absence de communication et d'accompagnement</td>
+                    </tr>
+                    <tr>
+                        <td>Les nouvelles possibilités technologiques ont-elles fait évoluer le modèle d’organisation de
+                            l’entreprise et/ou
+                            votre management, vers plus de collaboration avec des acteurs internes ou externes ?</td>
+
+                        <td>
+                            <input type="radio" name="score37" value="0"> 0
+                            <input type="radio" name="score37" value="1"> 1
+                            <input type="radio" name="score37" value="2"> 2
+                        </td>
+                        <td>Oui on sort complétement du mode silot et on favorise le mode projet</td>
+                        <td>Oui quelques évolutions s'opèrent pour travailler en inter-service ou avec l'externe,
+                            toutefois le potentiel
+                            n'est pas pleinement exploité</td>
+                        <td>L'organisation est en silot, absence de projets transversaux et d'interactions avec les
+                            autres sites</td>
+                    </tr>
+                    <tr>
+                        <td>Mobilisez-vous des outils de veille et mettez-vous en œuvre des modalités de curation et de
+                            partage de l’
+                            information ?</td>
+
+                        <td>
+                            <input type="radio" name="score38" value="0"> 0
+                            <input type="radio" name="score38" value="1"> 1
+                            <input type="radio" name="score38" value="2"> 2
+                        </td>
+                        <td>Oui l'entreprise est en capacité de mesurer sa performance et de réagir rapidement pour se
+                            mettre à jour</td>
+                        <td>Il y a un peu de benchmark toutefois les décisions d'évolutions sont un peu tardives (quand
+                            il n'y a plus le
+                            choix)</td>
+                        <td>Absence de veille</td>
+                    </tr>
+                    <tr>
+                        <td>Les fonctionnalités des outils sont-elles augmentées par la pratique de vos collaborateurs ?
+                        </td>
+
+                        <td>
+                            <input type="radio" name="score39" value="0"> 0
+                            <input type="radio" name="score39" value="1"> 1
+                            <input type="radio" name="score39" value="2"> 2
+                        </td>
+                        <td>Oui totalement les outils s'adaptent au terrain quotidiennement</td>
+                        <td>Oui mais les outils sont vieillissants, il y a des freins pour les faire évoluer</td>
+                        <td>Absence de prise en compte des pratiques terrain</td>
+                    </tr>
+                    <tr>
+                        <td>Comment accompagnez-vous vos collaborateurs dans la transition numérique ?</td>
+
+                        <td>
+                            <input type="radio" name="score40" value="0"> 0
+                            <input type="radio" name="score40" value="1"> 1
+                            <input type="radio" name="score40" value="2"> 2
+                        </td>
+                        <td>L'entreprise est pro-active par la promotion des innovations et des outils numériques.
+                            J'adhère</td>
+                        <td>L'entreprise accompagne en faisant de son mieux pour faire adhérer les autres, il y a
+                            parfois quelques blocages.
+                            J'aimerais parfois être moi-même accompagné</td>
+                        <td>Absence d'accompagnement</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div id="tab4" class="tab-content">
-            <h2>Contenu de l'Onglet 4</h2>
-            <p>Ceci est le contenu pour l'onglet 4.</p>
+            <h2>Synthèse</h2>
+            <p>La synthèse nulle des trois onglets précédents</p>
         </div>
     </div>
 
