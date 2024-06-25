@@ -17,7 +17,7 @@ CREATE TABLE Question (
   Intitule VARCHAR(255) NOT NULL,
   Reponse0 VARCHAR(255),
   Reponse1 VARCHAR(255),
-  Reponse2 VARCHAR(255),
+  Reponse2 VARCHAR(500),
   SousCategorield INT,
   FOREIGN KEY (SousCategorield) REFERENCES Sous_categorie(Id),
   INDEX idx_Question_SousCategorield (SousCategorield)
