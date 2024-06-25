@@ -23,6 +23,13 @@ CREATE TABLE Question (
   INDEX idx_Question_SousCategorield (SousCategorield)
 );
 
+CREATE TABLE Entreprise (
+  Id INT PRIMARY KEY AUTO_INCREMENT,
+  Nom VARCHAR(255) NOT NULL,
+  Email VARCHAR(255) NOT NULL,
+  MDP VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE ReponseEntreprise (
   Id INT PRIMARY KEY AUTO_INCREMENT,
   Valeur TINYINT NOT NULL,  -- valeur peut être 0, 1 ou 2
@@ -33,11 +40,4 @@ CREATE TABLE ReponseEntreprise (
   FOREIGN KEY (IdQuestion) REFERENCES Question(Id),
   INDEX idx_ReponseEntreprise_IdEntrprise (IdEntrprise),
   INDEX idx_ReponseEntreprise_IdQuestion (IdQuestion)
-);
-
-CREATE TABLE Entreprise (
-  Id INT PRIMARY KEY AUTO_INCREMENT,
-  Nom VARCHAR(255) NOT NULL,
-  Email VARCHAR(255) NOT NULL,
-  MDP VARCHAR(255) NOT NULL
 );
