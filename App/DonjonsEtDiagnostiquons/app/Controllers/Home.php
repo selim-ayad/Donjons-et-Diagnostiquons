@@ -2,10 +2,26 @@
 
 namespace App\Controllers;
 
+use App\Models\EntrepriseModel;
+
 class Home extends BaseController
 {
-    public function index(): string
+    public function __construct()
     {
-        return view('welcome_message');
+        echo view('main');
+    }
+
+    public function index()
+    {
+        $model = new EntrepriseModel();
+        $entreprises = $model->getAllEntreprises();
+
+        // Vérifier si des données sont disponibles
+        if (!empty($entreprises)) {
+            echo view('header');
+            echo view('home', ['entreprises' => $entreprises]);
+        } else {
+            echo "Aucune entreprise trouvée.";
+        }
     }
 }

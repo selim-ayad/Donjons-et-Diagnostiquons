@@ -2,7 +2,7 @@
 INSERT INTO Categorie (Nom) VALUES ('Axe Compétences'), ('Axe Réactivité'), ('Axe Numérique');
 
 -- Insertion des sous-catégories
-INSERT INTO Sous_categorie (Nom, Description, Categorield) VALUES
+INSERT INTO Sous_categorie (Nom, Description, CategorieId) VALUES
     ('Excellence Technique/Communauté de pratiques', 'Mesure de l\'excellence technique de l\'entreprise et de la capacité à partager les compétences.', 1),
     ('Faire agile', 'Mesure de l\'adoption d\'une culture agile et d\'une méthodologie agile dans l\'entreprise.', 1),
     ('Gestion humaine des compétences', 'Mesure de la manière dont l\'entreprise gère les compétences de ses collaborateurs.', 1),
@@ -17,7 +17,7 @@ INSERT INTO Sous_categorie (Nom, Description, Categorield) VALUES
 
 -- Insertion des questions
 -- Insertion des questions pour Axe Compétences
-INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorield) VALUES 
+INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorieId) VALUES 
     ('Formations pour Apprendre à apprendre, changement de paradigme, "être à la page" (au delà des compétences "justes" nécessaires)', 'Désintérêt pour l\'amélioration de la compétence des équipes', 'Nombreuses formations métiers dans le plan de formation', 'Possibilité de choisir et de suivre des formations "annexes" au métier et/ou temps dédié pour de l\'auto formation', 1),
     ('Le co développement (outill d\'intelligence collective) existe til dans l\'entreprise?', 'Pas du tout', 'Quelques initiatives', 'Démarche instaurée et pratiquée régulièrement', 1),
     ('Les collaborateurs t-ils amenés à partager leurs compétences et sous quelles formes?', 'Aucune initiative', 'Capitalisation d\'ur certain nombre de savoirs', 'Véritable communauté de pratiques en place', 1),
@@ -29,7 +29,7 @@ INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorield) V
     ('Votre entreprise gère t-elle humainement les compétences?', 'Non', 'Un peu', 'Oul', 3);
 
 -- Insertion des questions pour Axe Réactivité
-INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorield) VALUES 
+INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorieId) VALUES 
     ('Valeur supérieure utilisable livrée plus tôt (Fonction principale utilisable dès les premières versions)', 'Pas de phase de validation intermédiaire', 'Prototype fonctionnel intermédiaire livré au client', 'Principe du MVP respecté : Minimum Viable Product/la version d\'un produit qui permet d\'obtenir un maximum de retours client avec un minimum d\'effort', 4),
     ('Réactivité face aux impératifs prépondérants', 'Pas de modification possible en cours de conception', 'Modifications en cours de conception engendrant alors du retard', 'L\'équipe de conception s\'adapte en cas de modification en cours de conception', 4),
     ('Mesure de la vélocité de l\'équipe (indicateur de suivi du travail d\'une équipe de conception)', 'Jamais', 'Suivi des tâches', 'Mesure de la vélocité', 4),
@@ -44,7 +44,7 @@ INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorield) V
 
 
 -- Insertion des questions pour Axe Numérique
-INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorield) VALUES 
+INSERT INTO Question (Intitule, Reponse0, Reponse1, Reponse2, SousCategorieId) VALUES 
 	('Votre entreprise dégage t-elle une part de CA par des produits ou services en ligne?', 'Moins de 10%', 'Oui environ 20%', 'Oui environ 30%', 8),
 	('La mise en place d''outils numériques a-t-elle permis d''optimiser les coûts, les délais et la qualité ?', 'Aucun', 'Oui mais pas pour tous les critères', 'Oui pour tous les critères', 8),
 	('Comment les outils sont-ils intégrés dans les process de l''entreprise ?', 'En mode novice: au mieux par mail ou via le site internet', 'En mode collaboratif: quelques aménagements (type sharepoint, drive) pour des sujets plutôt ponctuels', 'En mode avancé: des plateformes dédiées (type extranet, applications) sont intégrées au mode de partage permanent', 8),

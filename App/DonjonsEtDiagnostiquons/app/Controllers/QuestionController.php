@@ -22,12 +22,12 @@ class QuestionController extends BaseController
     {
         $model = new QuestionModel();
 
-        $questions = $model->getQuestions();
+        $questions = $model->getQuestionsGroupedBySousCategorie();
 
         // Vérifier si des données sont disponibles
         if (!empty($questions)) {
             echo view('header');
-            echo view('questions', ['questions' => $questions]);
+            echo view('newDiagnostic', ['questions' => $questions]);
         } else {
             echo "Aucune question trouvée.";
         }

@@ -1,5 +1,4 @@
 <header>
-    <img src="/img/logo.png" alt="Logo">
-    <h1>DDE - Diagnostic Digital des Entreprises</h1>
+    <a href="<?php echo site_url('#'); ?>"><img src="/img/logo.webp" alt="Logo"></a>
     <div class="group-name">Groupe 1 - Donjons & Diagnostiquons</div>
 </header>
