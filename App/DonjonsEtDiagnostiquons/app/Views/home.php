@@ -1,7 +1,11 @@
 <h1>Liste des diagnostics des entreprises</h1>
 <ul>
     <?php foreach ($entreprises as $entreprise): ?>
-        <li><?php echo $entreprise['Nom']; ?></li>
+        <li>
+            <a href="<?php echo site_url('viewDiagnostic/' . $entreprise['Id']); ?>">
+                <?php echo $entreprise['Nom']; ?>
+            </a>
+        </li>
     <?php endforeach; ?>
 </ul>
 

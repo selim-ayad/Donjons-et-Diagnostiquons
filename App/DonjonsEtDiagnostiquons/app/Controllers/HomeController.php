@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\EntrepriseModel;
 
-class Home extends BaseController
+class HomeController extends BaseController
 {
     public function __construct()
     {

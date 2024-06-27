@@ -12,11 +12,6 @@ class QuestionController extends BaseController
     {
         echo view('main');
     }
-    
-    public function options()
-    {
-        return $this->response->setHeader('Allow', 'POST, PUT, DELETE')->setStatusCode(ResponseInterface::HTTP_OK);
-    }
 
     public function search()
     {
