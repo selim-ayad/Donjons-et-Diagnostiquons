@@ -156,7 +156,6 @@
             var subCategoryCount = 0;
 
             subCategoryIds.forEach(function(subCategoryId) {
-
                 var inputsFromSubCat = document.querySelectorAll('p[name*="[score]"][data-category="' + categoryId + '"][data-sub-category="' + subCategoryId + '"]');
                 var totalScoreSub = 0;
 

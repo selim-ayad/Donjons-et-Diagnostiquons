@@ -9,7 +9,7 @@ class ReponseEntrepriseModel extends Model
     protected $table = 'ReponseEntreprise'; // Nom de la table des réponses d'entreprise
     protected $primaryKey = 'Id'; // Clé primaire de la table des réponses d'entreprise
 
-    protected $allowedFields = ['Valeur', 'IdEntrprise', 'IdQuestion', 'Justification'];
+    protected $allowedFields = ['Valeur', 'IdEntreprise', 'IdQuestion', 'Justification'];
 
     public function getResponseById($id)
     {

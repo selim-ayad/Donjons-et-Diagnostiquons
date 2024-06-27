@@ -27,6 +27,21 @@ h1 {
     margin-top: 15px;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    padding: 0;
+    margin: 30px 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header .group-name {
     font-size: 18px;
 }
@@ -35,6 +50,10 @@ header .group-name {
     display: flex;
     justify-content: center;
     max-width: 80%;
+}
+
+.addDiagBtn {
+    margin: 20px 0;
 }
 
 .tab-container {
