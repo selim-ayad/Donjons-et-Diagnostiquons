@@ -31,11 +31,11 @@ CREATE TABLE Entreprise (
 CREATE TABLE ReponseEntreprise (
   Id INT PRIMARY KEY AUTO_INCREMENT,
   Valeur TINYINT NOT NULL,  -- valeur peut être 0, 1 ou 2
-  IdEntrprise INT NOT NULL,
+  IdEntreprise INT NOT NULL,
   IdQuestion INT NOT NULL,
   Justification TEXT,
-  FOREIGN KEY (IdEntrprise) REFERENCES Entreprise(Id),
+  FOREIGN KEY (IdEntreprise) REFERENCES Entreprise(Id),
   FOREIGN KEY (IdQuestion) REFERENCES Question(Id),
-  INDEX idx_ReponseEntreprise_IdEntrprise (IdEntrprise),
+  INDEX idx_ReponseEntreprise_IdEntreprise (IdEntreprise),
   INDEX idx_ReponseEntreprise_IdQuestion (IdQuestion)
 );

@@ -18,7 +18,7 @@ class ReponseEntrepriseController extends BaseController
 
         try {
             // Récupérer les réponses de l'entreprise depuis la base de données
-            $reponses = $reponseEntrepriseModel->where('IdEntrprise', $idEntreprise)->findAll();
+            $reponses = $reponseEntrepriseModel->where('IdEntreprise', $idEntreprise)->findAll();
 
             // Récupérer les questions groupées par sous-catégorie
             $questions = $questionModel->getQuestionsGroupedBySousCategorie();
@@ -109,7 +109,7 @@ class ReponseEntrepriseController extends BaseController
                 // Save the response to the database
                 $reponseEntrepriseModel->save([
                     'Valeur' => $score,
-                    'IdEntrprise' => $idEntreprise,
+                    'IdEntreprise' => $idEntreprise,
                     'IdQuestion' => $questionId,
                     'Justification' => $justification
                 ]);
@@ -122,6 +122,38 @@ class ReponseEntrepriseController extends BaseController
         } catch (DatabaseException $e) {
             // Log l'erreur pour plus de détails
             log_message('error', $e->getMessage());
+            return $this->response->setStatusCode(500, 'Erreur interne du serveur');
+        }
+    }
+
+    public function deleteReponsesEntreprise($idEntreprise)
+    {
+        $entrepriseModel = new EntrepriseModel();
+        $reponseEntrepriseModel = new ReponseEntrepriseModel();
+
+        try {
+            // Vérifier si l'entreprise existe
+            $entreprise = $entrepriseModel->find($idEntreprise);
+            if (!$entreprise) {
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'L\'entreprise avec l\'ID spécifié n\'existe pas.'
+                ]);
+            }
+            
+            // Supprimer les réponses de l'entreprise
+            $reponseEntrepriseModel->where('IdEntreprise', $idEntreprise)->delete();
+
+            // Supprimer l'entreprise elle-même
+            $entrepriseModel->delete($idEntreprise);
+
+            return $this->response->setJSON([
+                'status' => 'success',
+                'message' => 'L\'entreprise et ses réponses associées ont été supprimées avec succès.'
+            ]);
+        } catch (\Exception $e) {
+            // En cas d'erreur, retourner une réponse d'erreur avec le code 500
+            log_message('error', 'Erreur lors de la suppression de l\'entreprise: ' . $e->getMessage());
             return $this->response->setStatusCode(500, 'Erreur interne du serveur');
         }
     }
